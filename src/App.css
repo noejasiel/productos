@@ -1,0 +1,93 @@
+.gridStyle {
+  display: grid;
+  grid-auto-rows: 22rems;
+  grid-gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+}
+
+.img {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbarBase {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  position: fixed;
+  bottom: 0px;
+}
+
+.navbarStyle {
+  transition: all 0.9s ease-in-out;
+  height: 50%;
+  position: fixed;
+  bottom: 0px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.navbarStyle-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+  padding-bottom: 2em;
+  padding-left: 0;
+}
+
+.navbarStyle-ul-li {
+  color: #2f3e46;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbarStyle-ul-li:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.overWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-wrap: break-word;
+}
+
+/* //productImg */
+.imgProduct {
+  margin: 0 auto;
+  object-fit: scale-down;
+  max-height: 315px;
+}
+
+/* boxShadow */
+.boxShadow {
+  box-shadow: 3px 3px 8px 0px #787a7a;
+}
+
+.boxShadow {
+  width: 100%;
+  height: 100%;
+}
+.boxShadow :hover {
+  border-radius: 12px;
+  background-color: white;
+  color: #84a98c;
+}
+
+.bgColor {
+  background-color: #84a98c;
+  color: white;
+}
+
+.bgColor:hover {
+  color: #84a98c;
+  background-color: white;
+}
