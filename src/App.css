@@ -90,4 +90,25 @@
 .bgColor:hover {
   color: #84a98c;
   background-color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.gridStyleStorage {
+  display: grid;
+  grid-auto-rows: 40rems;
+  grid-gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+
+.bgLink{
+    text-decoration: none;  
+    color: white;
+}
+.bgLink:hover{
+    text-decoration: none;  
+    color: #84a98c;
 }

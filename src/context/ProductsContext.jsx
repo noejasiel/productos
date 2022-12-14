@@ -9,16 +9,15 @@ export const ProductsProvider = ({ children }) => {
   const [productsState, setProducts] = useState(products);
 
   useEffect(() => {
-    setProducts(products);
-  }, []);
+    getProducts();
+  }, [products]);
 
   const getProducts = () => {
     setProducts(products);
-    return productsState;
   };
 
   return (
-    <ProductsContext.Provider value={{ productsState }}>
+    <ProductsContext.Provider value={{ productsState, getProducts }}>
       {children}
     </ProductsContext.Provider>
   );

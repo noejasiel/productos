@@ -3,6 +3,7 @@ import "./App.css";
 import { Layout } from "./pages/Layout";
 import { AppRouter } from "./router/AppRouter";
 import { ProductsProvider } from "./context/ProductsContext";
+import { StorageProvider } from "./context/StorageContext";
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
     //   <Layout></Layout>
     // </div>
     <ProductsProvider>
-      <AppRouter />
+      <StorageProvider>
+       <AppRouter />
+      </StorageProvider>
     </ProductsProvider>
   );
 }

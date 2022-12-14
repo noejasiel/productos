@@ -5,7 +5,7 @@ import { CardHome } from "../components/CardHome";
 export const Home = () => {
   return (
     <>
-      <div className="w-full  bg-bg gridStyle	">
+      <div className="w-full  bg-bg gridStyle	 sm:w-4/5 mx-auto pt-4">
         <CardHome />
         <CardHome />
       </div>

@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         bg: "#CAD2C5",
         secondary: "#84A98C",
+        secondaryy: "#84A98C",
         tertiary: "#52796F",
         quaternary: "#354F52",
         quinary: "#2F3E46",
@@ -21,6 +22,14 @@ module.exports = {
         desciption: "11px",
       },
     },
+    screens: {
+      imgProduct: "400px",
+      sm: '640px',
+
+      md: '768px',
+
+      lg: '1024px',
+    }
   },
   plugins: [],
 };

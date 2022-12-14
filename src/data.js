@@ -5,7 +5,7 @@ import iPhone142 from "./assets/iPhone142m.png";
 export const products = [
   {
     id: 1,
-    img: [
+    images: [
       {
         idImg: 1,
         src: iPhone14,
@@ -22,11 +22,11 @@ export const products = [
         type: "url",
       },
     ],
-    marca: "Apple",
-    modelo: "iPhone 13",
-    descripcion: "iPhone 15' retinashbdkncfehkds",
-    condicion: "Nuevo",
-    peso: "0.3kg",
+    mark: "Apple",
+    model: "iPhone 13",
+    description: "iPhone 15' retinashbdkncfehkds",
+    condition: "Nuevo",
+    weight: 1,
     storage: [
       {
         idStorage: 1,
@@ -35,17 +35,52 @@ export const products = [
       },
     ],
     upc: "123456789",
+    count: 100,
   },
   {
     id: 2,
-    img: [
+    images: [
       {
-        id: 1,
+        idImg: 1,
         src: iPhone14,
         type: "url",
       },
       {
-        id: 2,
+        idImg: 2,
+        src: iPhone142,
+        type: "url",
+      },
+      {
+        id: 3,
+        src: iPhone142,
+        type: "url",
+      },
+    ],
+    mark: "Apple",
+    model: "iPhone 13",
+    description: "iPhone 15' retinashbdkncfehkds",
+    condition: "Nuevo",
+    weight: 2,
+    storage: [
+      {
+        idStorage: 1,
+        nameStorage: "coacalco",
+        quantity: 100,
+      },
+    ],
+    upc: "123456789",
+    count: 100,
+  },
+  {
+    id: 3,
+    images: [
+      {
+        idImg: 1,
+        src: iPhone14,
+        type: "url",
+      },
+      {
+        idImg: 2,
         src: iPhone13,
         type: "url",
       },
@@ -55,22 +90,31 @@ export const products = [
         type: "url",
       },
     ],
-    marca: "Apple",
-    modelo: "iPhone 14",
-    descripcion: "iPhone 14' retinashbdkncfehkds",
-    condicion: "usado",
-    peso: "0.3kg",
+    mark: "Apple",
+    model: "iPhone 13",
+    description: "iPhone 15' retinashbdkncfehkds",
+    condition: "Nuevo",
+    weight: 1,
+    storage: [
+      {
+        idStorage: 1,
+        nameStorage: "coacalco",
+        quantity: 100,
+      },
+    ],
+    upc: "123456789",
+    count: 100,
   },
   {
     id: 4,
-    img: [
+    images: [
       {
-        id: 1,
+        idImg: 1,
         src: iPhone14,
         type: "url",
       },
       {
-        id: 2,
+        idImg: 2,
         src: iPhone13,
         type: "url",
       },
@@ -80,35 +124,20 @@ export const products = [
         type: "url",
       },
     ],
-    marca: "Apple",
-    modelo: "iPhone 15",
-    descripcion: "iPhone 15' retinashbdkncfehkds",
-    condicion: "Reacondicionado",
-    peso: "0.3kg",
-  },
-  {
-    id: 5,
-    img: [
+    mark: "Apple",
+    model: "iPhone 13",
+    description: "iPhone 15' retinashbdkncfehkds",
+    condition: "Nuevo",
+    weight: 1,
+    storage: [
       {
-        id: 1,
-        src: iPhone14,
-        type: "url",
-      },
-      {
-        id: 2,
-        src: iPhone13,
-        type: "url",
-      },
-      {
-        id: 3,
-        src: iPhone142,
-        type: "url",
+        idStorage: 1,
+        nameStorage: "coacalco",
+        quantity: 100,
       },
     ],
-    marca: "Apple",
-    modelo: "iPhone 16",
-    descripcion: "iPhone 16' retinashbdkncfehkds",
-    condicion: "Nuevo",
-    peso: "0.3kg",
+    upc: "123456789",
+    count: 100,
   },
+  
 ];

@@ -2,7 +2,14 @@ import { Route, Router, Routes } from "react-router-dom";
 import { AddProduct } from "../pages/AddProduct";
 import { Home } from "../pages/Home";
 import { Layout } from "../pages/Layout";
+import { LayoutWithOut } from "../pages/LayoutWithOut";
 import { Product } from "../pages/Product";
+import { AddStorage } from "../pages/AddStorage";
+import { Storage } from "../pages/Storage";
+import { PageNotFound } from "../pages/PageNotFound";
+import { StorageId } from "../pages/StorageId";
+import { UpdateProduct } from "../pages/UpdateProduct";
+import { Existence } from "../pages/Existence";
 
 export const AppRouter = () => {
   return (
@@ -18,20 +25,60 @@ export const AppRouter = () => {
       <Route
         path="product/:id"
         element={
-          <Layout>
+          <LayoutWithOut>
             <Product />
-          </Layout>
+          </LayoutWithOut>
         }
       />
       <Route
-        path="/addProduct/:id"
+        path="/addProduct"
         element={
-          <Layout>
+          <LayoutWithOut>
             <AddProduct />
-          </Layout>
+          </LayoutWithOut>
         }
       />
-      <Route path="/*" element={<h1>404: Not Found</h1>} />
+      <Route
+        path="/updateProduct/:id"
+        element={
+          <LayoutWithOut>
+            <UpdateProduct />
+          </LayoutWithOut>
+        }
+      />
+      <Route
+        path="/product/existence/:id"
+        element={
+          <LayoutWithOut>
+            <Existence />
+          </LayoutWithOut>
+        }
+      />
+      <Route
+        path="/addStorage"
+        element={
+          <LayoutWithOut>
+            <AddStorage />
+          </LayoutWithOut>
+        }
+      />
+      <Route
+        path="/Storage"
+        element={
+          <LayoutWithOut>
+            <Storage />
+          </LayoutWithOut>
+        }
+      />
+      <Route
+        path="storage/:id"
+        element={
+          <LayoutWithOut>
+            <StorageId />
+          </LayoutWithOut>
+        }
+      />
+      <Route path="/*" element={<PageNotFound />} />
     </Routes>
   );
 };

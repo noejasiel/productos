@@ -1,14 +1,14 @@
 import { Header } from "../components/Header";
 import { Navbar } from "../components/Navbar";
 
-export const Layout = ({ children }) => {
+export const LayoutWithOut = ({ children }) => {
   return (
-    <div className="">
+    <div className="bg-bg h-full absolute w-full top-0 bottom-0">
       <Header />
 
       <Navbar />
-      <div className="bg-bg relative top-0 bottom-0 pb-10">{children}</div>
-      <p>Footer</p>
+      <div className="">{children}</div>
+
       {/* <Footer /> */}
     </div>
   );

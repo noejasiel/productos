@@ -1,0 +1,9 @@
+.bgCard{
+    background-color: white;
+    cursor: pointer;
+    border-radius: 17px;
+}
+.bgCard:hover{
+    background-color: #c4dcc9;
+    color: white;
+}

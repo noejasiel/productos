@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 // import iPhone14 from "../assets/iPhone13.png";
 // import iPhone14 from "../assets/iPhone14.png";
-import iPhone14 from "../assets/iPhone142.png";
 import deletee from "../assets/delete.png";
 import update from "../assets/update.png";
 import noStock from "../assets/noStock.png";
@@ -27,82 +26,53 @@ export const Product = () => {
         <h1>Loading...</h1>
       ) : (
         <div className=" w-full bg-bg">
-          <div className="p-3 h-full w-4/5 mx-auto">
-            <div className="w-4/5 mx-auto max-w-400">
+          <div className="p-3 pt-5 h-full w-4/5 mx-auto sm:flex sm:items-center">
+            <div className="w-4/5 mx-auto max-w-400 sm:w-2/5">
               <Slider />
             </div>
-            <div className=" overWrap bg-white rounded-2xl">
+            <div className=" overWrap bg-white rounded-2xl sm:h-fit sm:w-2/5">
               <div className="p-6">
                 <p className="font-bold text-2xl text-quaternary m-0">
-                  {product.marca}
+                  {product.mark}
                 </p>
                 <p className="font-bold text-xl text-quaternary m-0">
-                  {product.modelo}
+                  {product.model}
                 </p>
                 <p className="text-lg font-normal text-secondary m-0">
-                  {product.descripcion}
+                  {product.description}
                 </p>
                 <p className="text-xl font-bold text-sm text-quaternary m-0">
-                  {product.condicion}
+                  {product.condition}
                 </p>
-                <div className="gridStyle ">
+                <div className="flex justify-between ">
                   <p className="text-xl font-bold text-sm text-quaternary m-0">
-                    {product.peso}
+                    {product.weight}
                   </p>
-                  <button className="bgColor rounded-2xl px-4 py-2 font-bold text-sm">
-                    X en almacen
+                  <button className="bgColor rounded-2xl px-2 py-1 font-bold text-sm">
+                    <Link
+                      className="no-underline bgLink"
+                      to={`/product/existence/${product.id}`}
+                    >
+                      X en almacen {"  >  "}
+                    </Link>
                   </button>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex flex-row pb-16 justify-end pr-9">
+            <button>
+              <img src={noStock} />
+            </button>
+            <button>
+              <img src={update} />
+            </button>
+            <button>
+              <img src={deletee} />
+            </button>
           </div>
         </div>
       )}
     </>
   );
 };
-// return (
-//   <div className="w-full  bg-bg">
-//     {/* grid Display */}
-//     <div className=" gridStyle	">
-//       <div className="p-3 h-full w-full">
-//         <div className="w-full">
-//           <img src={iPhone14} className="imgProduct" height="200" />
-//         </div>
-//         <div className="bg-white py-4 px-7 rounded-2xl my-3">
-//           <div className="overWrap">
-//             <p className="font-bold text-2xl text-quaternary">iPhone 13</p>
-//             <p className="text-desciption font-normal text-secondary">
-//               {" "}
-//               iPhone 15' retina swdtgryhujretrewcwvtbwrme-wñlwcñlñw hjk
-//               sbhjndklmfdnskhjnmlhbniws
-//             </p>
-//             <div className="flex justify-between items-center mt-3 ">
-//               <p className="font-bold text-xl  text-quaternary">$230</p>
-//               <div className="">
-//                 <button className=" bg-secondary rounded-xl boxShadow">
-//                   <p className=" px-2 py-3 text-base text-white">
-//                     {" "}
-//                     X en almacen
-//                   </p>
-//                 </button>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//     <div className="flex flex-row pb-16 justify-end pr-9">
-//       <button>
-//         <img src={noStock} />
-//       </button>
-//       <button>
-//         <img src={update} />
-//       </button>
-//       <button>
-//         <img src={deletee} />
-//       </button>
-//     </div>
-// </div>
-//   );
-// };
