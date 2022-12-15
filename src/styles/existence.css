@@ -1,5 +1,4 @@
 .borderExistence{
-    color: black;
     box-shadow: brown;
     box-shadow: 3px 3px 4px 0px #989696;
     border-radius: 17px;
@@ -19,5 +18,24 @@
     display: grid;
     grid-auto-rows: 20rems;
     grid-gap: 30px 0;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   }
+
+.borderExistenceStorage{
+    color: black;
+    box-shadow: brown;
+    box-shadow: 3px 3px 4px 0px #989696;
+    border-radius: 17px;
+ }
+
+ .borderExistenceStorage div{
+    color: black;
+    box-shadow: brown;
+    /*box-shadow: 3px 3px 4px 0px #989696;*/
+    border-radius: 17px;
+ }
+
+.borderExistenceStorage div:hover{
+    color: white;
+    background-color: #84a98c;
+}

@@ -46,11 +46,11 @@ export const AddProduct = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    !inputData.bodega ? setInputField(true) : setInputField(false);
+    /*  !inputData.bodega ? setInputField(true) : setInputField(false);
 
     !inputData.condicion
       ? setinputFieldCondition(true)
-      : setinputFieldCondition(false);
+      : setinputFieldCondition(false); */
     console.log(inputImage);
     /*let data = new FormData();
     data.append("dataForm", inputData);

@@ -1,0 +1,8 @@
+.gridStyleStorage{
+    display: grid;
+  grid-auto-rows: 22rems;
+  grid-gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+}

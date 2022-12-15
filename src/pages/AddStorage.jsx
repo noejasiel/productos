@@ -41,7 +41,7 @@ export const AddStorage = () => {
               className="appearance-none block w-full bg-gray-200 inputName border border-red-500 rounded-2xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               id="grid-first-name"
               type="text"
-              placeholder="Jane"
+              placeholder="Coacalco z1"
               name="nameStorage"
               required
             />
@@ -58,7 +58,7 @@ export const AddStorage = () => {
               className="aƒppearance-none block w-full bg-gray-200 inputName border border-gray-200 rounded-2xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="grid-last-name"
               type="text"
-              placeholder="Doe"
+              placeholder="Av. Coacalco"
               name="adress"
               required
             />

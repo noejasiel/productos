@@ -28,9 +28,9 @@ export const Form = ({
             className="appearance-none block w-full bg-gray-200 inputName border border-red-500 rounded-2xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-first-name"
             type="text"
-            placeholder="Jane"
+            placeholder="Apple"
             name="mark"
-            value={inputData?.mark ?? ""}
+            value={inputData?.mark ?? null}
             disabled={inputData?.mark ? true : false}
             required
           />
@@ -47,9 +47,9 @@ export const Form = ({
             className="aƒppearance-none block w-full bg-gray-200 inputName border border-gray-200 rounded-2xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-last-name"
             type="text"
-            placeholder="Doe"
+            placeholder="iPhone 10"
             name="model"
-            value={inputData?.model ?? ""}
+            value={inputData?.model ?? null}
             disabled={inputData?.model ? true : false}
             required
           />
@@ -66,9 +66,9 @@ export const Form = ({
             className="aƒppearance-none block w-full bg-gray-200 inputName border border-gray-200 rounded-2xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-last-name"
             type="text"
-            placeholder="Doe"
+            placeholder="iPhone 13 de 5 pulgadas"
             name="description"
-            value={inputData?.description ?? ""}
+            value={inputData?.description ?? null}
             required
           />
         </div>
@@ -84,9 +84,9 @@ export const Form = ({
             className="aƒppearance-none block w-full bg-gray-200 inputName border border-gray-200 rounded-2xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-last-name"
             type="text"
-            placeholder="Doe"
+            placeholder="234h"
             name="upc"
-            value={inputData?.upc ?? ""}
+            value={inputData?.upc ?? null}
             required
           />
         </div>
@@ -104,9 +104,9 @@ export const Form = ({
             className="appearance-none block w-full bg-gray-200 inputName border border-gray-200 rounded-2xl py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-city"
             type="number"
-            placeholder="Albuquerque"
+            placeholder="1"
             name="weight"
-            value={inputData?.weight ?? 0}
+            value={inputData?.weight ?? null}
             required
           />
         </div>

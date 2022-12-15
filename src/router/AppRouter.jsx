@@ -10,6 +10,7 @@ import { PageNotFound } from "../pages/PageNotFound";
 import { StorageId } from "../pages/StorageId";
 import { UpdateProduct } from "../pages/UpdateProduct";
 import { Existence } from "../pages/Existence";
+import { Contact } from "../pages/Contact";
 
 export const AppRouter = () => {
   return (
@@ -78,7 +79,23 @@ export const AppRouter = () => {
           </LayoutWithOut>
         }
       />
-      <Route path="/*" element={<PageNotFound />} />
+      <Route
+        path="contactUs"
+        element={
+          <LayoutWithOut>
+            <Contact />
+          </LayoutWithOut>
+        }
+      />
+      <Route
+        path="/*"
+        element={
+          <LayoutWithOut>
+            {" "}
+            <PageNotFound />
+          </LayoutWithOut>
+        }
+      />
     </Routes>
   );
 };

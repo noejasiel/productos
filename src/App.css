@@ -112,3 +112,10 @@
     text-decoration: none;  
     color: #84a98c;
 }
+
+
+
+
+ bgLinkNavbar:link, bgLinkNavbar:visited, bgLinkNavbar:active {
+    text-decoration:none;
+}

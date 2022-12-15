@@ -1,6 +1,4 @@
 import { Link, useParams } from "react-router-dom";
-// import iPhone14 from "../assets/iPhone13.png";
-// import iPhone14 from "../assets/iPhone14.png";
 import deletee from "../assets/delete.png";
 import update from "../assets/update.png";
 import noStock from "../assets/noStock.png";
@@ -46,7 +44,7 @@ export const Product = () => {
                 </p>
                 <div className="flex justify-between ">
                   <p className="text-xl font-bold text-sm text-quaternary m-0">
-                    {product.weight}
+                    {product.weight} kg
                   </p>
                   <button className="bgColor rounded-2xl px-2 py-1 font-bold text-sm">
                     <Link
@@ -60,17 +58,18 @@ export const Product = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-row pb-16 justify-end pr-9">
+          {/* <div className="flex flex-row pb-16 justify-end pr-9 m-auto items-center">
+            <h3 className="text-quinary mr-3">Utilidades</h3>
+            <hr />
             <button>
-              <img src={noStock} />
-            </button>
-            <button>
-              <img src={update} />
+              <Link to={`/updateProduct/${product.id}`}>
+                <img src={update} />
+              </Link>
             </button>
             <button>
               <img src={deletee} />
             </button>
-          </div>
+          </div> */}
         </div>
       )}
     </>

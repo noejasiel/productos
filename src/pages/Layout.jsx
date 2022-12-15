@@ -1,15 +1,14 @@
 import { Header } from "../components/Header";
+import { HeaderWithSearch } from "../components/HeaderWithSearch";
 import { Navbar } from "../components/Navbar";
 
 export const Layout = ({ children }) => {
   return (
     <div className="">
-      <Header />
+      <HeaderWithSearch />
 
       <Navbar />
-      <div className="bg-bg relative top-0 bottom-0 pb-10">{children}</div>
-      <p>Footer</p>
-      {/* <Footer /> */}
+      <div className="bg-bg relative top-0 bottom-0 pb-12 ">{children}</div>
     </div>
   );
 };
