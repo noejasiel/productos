@@ -23,7 +23,7 @@ export const Product = () => {
       {loading ? (
         <h1>Loading...</h1>
       ) : (
-        <div className=" w-full bg-bg">
+        <div className=" w-full bg-bg pb-16">
           <div className="p-3 pt-5 h-full w-4/5 mx-auto sm:flex sm:items-center">
             <div className="w-4/5 mx-auto max-w-400 sm:w-2/5">
               <Slider />

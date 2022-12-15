@@ -79,12 +79,7 @@ export const Navbar = () => {
                 </NavLink>
               </li>
               <li className="navbarStyle-ul-li ">
-                <NavLink to={"/"} className="navbarStyle-ul-li">
-                  sobre nosotros{" "}
-                </NavLink>
-              </li>
-              <li className="navbarStyle-ul-li ">
-                <NavLink to={"/"} className="navbarStyle-ul-li">
+                <NavLink to={"/contactUs"} className="navbarStyle-ul-li">
                   Contactanos{" "}
                 </NavLink>
               </li>
